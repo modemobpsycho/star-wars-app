@@ -1,0 +1,14 @@
+@import '@/shared/breakpoints.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+
+  @media screen and (max-width: $media-sm) {
+    gap: 5px;
+  }
+}

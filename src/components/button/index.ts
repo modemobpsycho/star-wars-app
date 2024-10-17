@@ -1,0 +1,1 @@
+export { ButtonRandom } from './ButtonRandom';

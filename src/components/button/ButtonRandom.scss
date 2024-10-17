@@ -1,0 +1,26 @@
+@import '@/shared/breakpoints.scss';
+@import '@/shared/variables.scss';
+
+.button-random {
+  background-color: $button-color;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-color-hover;
+    color: $white-color;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: $media-sm) {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
