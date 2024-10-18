@@ -16,7 +16,6 @@ export const useGetInfoHero = (id: string) => {
     setIsSuccess(false);
     setIsError(false);
     const fetchData = async () => {
-      console.log(id);
       try {
         const response = await fetch(`${urls.API_URL}${indexValidator(id)}/`);
         const hero = heroMapper(await response.json());

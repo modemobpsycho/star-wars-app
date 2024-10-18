@@ -1,13 +1,12 @@
 import { useGetInfoHero } from '@/hooks/useGetInfoHero';
 import { urls } from '@/helpers/urls';
 import { useParams } from 'react-router-dom';
+import { indexValidator } from '@/utils/indexValidator';
 
 import './HeroCard.scss';
-import { indexValidator } from '@/utils/indexValidator';
 
 export const HeroCard = () => {
   const { id } = useParams();
-
   const { isLoading, isSuccess, infoHero } = useGetInfoHero(String(id));
 
   return (

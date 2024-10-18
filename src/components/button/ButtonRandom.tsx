@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import './ButtonRandom.scss';
 import { getRandomNum } from '@/utils/getRandomNum';
+
+import './ButtonRandom.scss';
 
 export function ButtonRandom() {
   const navigate = useNavigate();
